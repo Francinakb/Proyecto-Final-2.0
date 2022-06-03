@@ -1,0 +1,42 @@
+@import "../variables/variables";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&family=Roboto+Mono:wght@100&display=swap');
+
+@mixin titulos1 {
+    color: $naranja;
+    font-family: $font2;
+    font-size: $font-size1;
+}
+
+@mixin titulos2 {
+    font-family: $font2;
+    color: $rojo;
+    font-size: $font-size2;
+}
+
+@mixin header {
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin textos1 {
+    color: $amarillo;
+    font-size: 13px;
+    font-family: $font3;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+@mixin textos2 {
+    color: orange;
+    font-size: $font1;
+    font-family: $font3;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}

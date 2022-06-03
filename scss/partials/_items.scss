@@ -1,0 +1,158 @@
+@import "../variables/variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&family=Roboto+Mono:wght@100&display=swap');
+
+.header-items{
+    @include header;
+}
+
+    .nav-container2{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        .boton-items{
+            @extend .boton;
+        }
+
+        .boton-items:hover{
+            height: 80px;
+        }
+        }
+
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 200%;
+        height: 20vh;
+
+        .nav-titulo{
+            display: flex;
+            justify-content: center;
+            width: 200%;
+            color: $gris;
+            font-family: $font2;
+            font-size: 50px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .nav-lista{
+            display: flex;
+            justify-content: center;
+            width: 200%;
+    }
+
+        ul{
+            list-style: none;
+        }
+
+        .lista{
+            display: flex;
+            justify-items: end;
+            font-family: $font1;
+            padding: 20px;
+
+            .li{
+                padding: 10px;
+
+            .a{
+                text-decoration: none;
+                color: $gris;
+                }
+            }
+        }
+    }
+
+
+main{
+    padding: 10px;
+
+    .section-items{
+        display: grid;
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item4"
+        "item5 item6";
+        border: 2px dotted $naranja;
+        padding: 10px;
+    }
+    
+    .card1{
+        grid-area: item1;
+    }
+    
+    .card2{
+        grid-area: item2;
+    }
+    
+    .card3{
+        grid-area: item3;
+    }
+    
+    .card4{
+        grid-area: item4;
+    }
+    
+    .card5{
+        grid-area: item5;
+    }
+    
+    .card6{
+        grid-area: item6;
+    }
+}
+
+hr{
+    margin: 20px;
+}
+
+.footer-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: $gris;
+    font-family: $font1;
+
+    .info-footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .logos-flex{
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h2{
+            margin: 20px;
+        }
+
+        .logo1{
+            width: 40px;
+            height: 40px;
+        }
+        .logo2{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.footer-derechos{
+    color: $gris;
+    font-family: $font1;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
