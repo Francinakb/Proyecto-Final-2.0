@@ -46,23 +46,17 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap; }
-  .header-comunidad .nav-container2 {
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .header-comunidad .nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 200%;
+    width: 100%;
     height: 20vh; }
     .header-comunidad .nav-container .nav-titulo {
       display: flex;
       justify-content: center;
-      width: 200%;
+      width: 100%;
       color: #CACFD2;
       font-family: "Bebas Neue", cursive;
       font-size: 50px;
@@ -71,7 +65,7 @@
     .header-comunidad .nav-container .nav-lista {
       display: flex;
       justify-content: center;
-      width: 200%; }
+      width: 100%; }
     .header-comunidad .nav-container ul {
       list-style: none; }
     .header-comunidad .nav-container .lista {
@@ -127,7 +121,6 @@
 .videos-comunidad {
   display: flex;
   justify-content: center;
-  gap: 10px;
   padding: 10px;
   margin: 50px; }
 
@@ -194,36 +187,98 @@ hr {
     color: #630404;
     transform: scale(1); } }
 
-@media screen and (max-width: 768px) {
-  .section-container {
-    height: 30vh;
-    width: 80%;
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .header-comunidad {
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: space-between; }
-    .section-container .container-imagen1 {
+    flex-flow: row wrap; }
+    .header-comunidad .nav-container {
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 20vh; }
+      .header-comunidad .nav-container .nav-titulo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #CACFD2;
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px;
+        padding: 20px;
+        font-weight: bold; }
+      .header-comunidad .nav-container .nav-lista {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+      .header-comunidad .nav-container ul {
+        list-style: none; }
+      .header-comunidad .nav-container .lista {
+        display: flex;
+        justify-items: end;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px; }
+        .header-comunidad .nav-container .lista .li {
+          padding: 10px; }
+          .header-comunidad .nav-container .lista .li .a {
+            text-decoration: none;
+            color: #CACFD2; }
+    .header-comunidad .section-container {
+      height: 60vh;
       width: 80%;
-      height: 50vh; }
-      .section-container .container-imagen1 .fotos-comunidad1 {
-        width: 300px;
-        height: 600px; }
-    .section-container .container-imagen2 {
       display: flex;
-      justify-content: center;
-      width: 80%;
-      height: 50vh; }
-      .section-container .container-imagen2 .fotos-comunidad2 {
-        width: 300px;
-        height: 600px; } }
-
-@media screen and (max-width: 480px) {
+      justify-content: flex-end; }
+      .header-comunidad .section-container .container-imagen1 {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        height: 80%; }
+      .header-comunidad .section-container .container-imagen2 {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        height: 80%; }
   .videos-comunidad {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-    margin: 50px; } }
+    flex-direction: column;
+    padding: 2%;
+    margin: 0; } }
+
+@media screen and (min-width: 0px) and (max-width: 700px) and (min-width: 701px) and (max-width: 1023px) {
+  .header-comunidad {
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+    .header-comunidad .section-container {
+      height: 30vh;
+      width: 80%;
+      display: flex;
+      justify-content: space-between; }
+      .header-comunidad .section-container .container-imagen1 {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 50vh; }
+        .header-comunidad .section-container .container-imagen1 .fotos-comunidad1 {
+          width: 300px;
+          height: 600px; }
+    .header-comunidad .container-imagen2 {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      height: 50vh; }
+      .header-comunidad .container-imagen2 .fotos-comunidad2 {
+        width: 300px;
+        height: 600px; } }
 
 .boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
@@ -245,25 +300,17 @@ hr {
   width: 100%;
   display: flex;
   flex-flow: row wrap; }
-  .header-perks .nav-container2 {
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .header-perks .nav-container2 .boton-items:hover {
-      height: 80px; }
   .header-perks .nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 200%;
+    width: 100%;
     height: 20vh; }
     .header-perks .nav-container .nav-titulo {
       display: flex;
       justify-content: center;
-      width: 200%;
+      width: 100%;
       color: #CACFD2;
       font-family: "Bebas Neue", cursive;
       font-size: 50px;
@@ -272,7 +319,7 @@ hr {
     .header-perks .nav-container .nav-lista {
       display: flex;
       justify-content: center;
-      width: 200%; }
+      width: 100%; }
     .header-perks .nav-container ul {
       list-style: none; }
     .header-perks .nav-container .lista {
@@ -285,6 +332,14 @@ hr {
         .header-perks .nav-container .lista .li .a {
           text-decoration: none;
           color: #CACFD2; }
+  .header-perks .nav-container2 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header-perks .nav-container2 .boton-items:hover {
+      height: 80px; }
 
 .article-container {
   margin-top: 50px;
@@ -374,6 +429,48 @@ hr {
   100% {
     color: #630404;
     transform: scale(1); } }
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .header-perks {
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+    .header-perks .nav-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 20vh; }
+      .header-perks .nav-container .nav-titulo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #CACFD2;
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px;
+        padding: 20px;
+        font-weight: bold; }
+      .header-perks .nav-container .nav-lista {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+      .header-perks .nav-container ul {
+        list-style: none; }
+      .header-perks .nav-container .lista {
+        display: flex;
+        justify-items: end;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px; }
+        .header-perks .nav-container .lista .li {
+          padding: 10px; }
+          .header-perks .nav-container .lista .li .a {
+            text-decoration: none;
+            color: #CACFD2; } }
 
 .boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
@@ -492,6 +589,73 @@ hr {
   display: flex;
   justify-content: space-around; }
 
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .header-items {
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+  .nav-container2 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20vh; }
+    .nav-container .nav-titulo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: #CACFD2;
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px;
+      padding: 10px;
+      font-weight: bold; }
+    .nav-container .nav-lista {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .nav-container ul {
+      list-style: none; }
+    .nav-container .lista {
+      display: flex;
+      justify-items: end;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px; }
+      .nav-container .lista .li {
+        padding: 10px; }
+        .nav-container .lista .li .a {
+          text-decoration: none;
+          color: #CACFD2; }
+  main {
+    padding: 10px; }
+    main .section-items {
+      display: grid;
+      grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
+      border: 2px dotted #cf5e13;
+      padding: 10px; }
+    main .card1 {
+      grid-area: item1; }
+    main .card2 {
+      grid-area: item2; }
+    main .card3 {
+      grid-area: item3; }
+    main .card4 {
+      grid-area: item4; }
+    main .card5 {
+      grid-area: item5; }
+    main .card6 {
+      grid-area: item6; } }
+
 .boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
@@ -514,7 +678,7 @@ hr {
   flex-flow: row wrap; }
   .header-personajes .nav-container2 {
     height: 50vh;
-    width: 200%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -523,14 +687,14 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 200%;
+    width: 100%;
     height: 20vh; }
     .header-personajes .nav-container .boton-items:hover {
       height: 80px; }
     .header-personajes .nav-container .nav-titulo {
       display: flex;
       justify-content: center;
-      width: 200%;
+      width: 100%;
       color: #CACFD2;
       font-family: "Bebas Neue", cursive;
       font-size: 50px;
@@ -539,7 +703,7 @@ hr {
     .header-personajes .nav-container .nav-lista {
       display: flex;
       justify-content: center;
-      width: 200%; }
+      width: 100%; }
     .header-personajes .nav-container ul {
       list-style: none; }
     .header-personajes .nav-container .lista {
@@ -634,6 +798,99 @@ hr {
   display: flex;
   justify-content: center; }
 
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .header-personajes {
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+    .header-personajes .nav-container2 {
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header-personajes .nav-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 20vh; }
+      .header-personajes .nav-container .nav-titulo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #CACFD2;
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px;
+        padding: 20px;
+        font-weight: bold; }
+      .header-personajes .nav-container .nav-lista {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+      .header-personajes .nav-container ul {
+        list-style: none; }
+      .header-personajes .nav-container .lista {
+        display: flex;
+        justify-items: end;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px; }
+        .header-personajes .nav-container .lista .li {
+          padding: 10px; }
+          .header-personajes .nav-container .lista .li .a {
+            text-decoration: none;
+            color: #CACFD2; }
+  main {
+    padding: 10px;
+    background-color: black; }
+    main .article-personajes {
+      padding: 20px; }
+      main .article-personajes h2 {
+        color: #cf5e13;
+        font-family: "Bebas Neue", cursive;
+        font-size: 32px;
+        color: #d32a1e; }
+      main .article-personajes .p-personajes {
+        color: orange;
+        font-size: Arial, Helvetica, sans-serif;
+        font-family: "Roboto Mono", monospace;
+        font-weight: bold;
+        padding: 10px;
+        margin: 10px; }
+    main .asesinos-container {
+      padding: 20px;
+      border: 2px dotted #cf5e13;
+      display: grid;
+      grid-template-areas: "asesino1" "asesino2" "asesino3" "asesino4" "asesino5" "asesino6"; }
+    main .supervivientes-container {
+      padding: 20px;
+      border: 2px dotted #cf5e13;
+      display: grid;
+      grid-template-areas: "superviviente1" "superviviente2" "superviviente3" "superviviente4" "superviviente5" "superviviente6"; }
+    main h4 {
+      font-family: "Bebas Neue", cursive;
+      color: #d32a1e;
+      font-size: 20px; }
+    main .p-supervivientes {
+      color: #F4D03F;
+      font-size: 13px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: bold;
+      padding: 10px;
+      margin: 10px; }
+    main .p-asesinos {
+      color: #F4D03F;
+      font-size: 13px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: bold;
+      padding: 10px;
+      margin: 10px; } }
+
 .boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
@@ -674,21 +931,21 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 200%;
+    width: 100%;
     height: 20vh; }
     .header-index .nav-container .nav-titulo {
       display: flex;
       justify-content: center;
-      width: 200%;
+      width: 100%;
       color: #CACFD2;
       font-family: "Bebas Neue", cursive;
-      font-size: 50px;
+      font-size: 30px;
       padding: 20px;
       font-weight: bold; }
     .header-index .nav-container .nav-lista {
       display: flex;
       justify-content: center;
-      width: 200%; }
+      width: 100%; }
       .header-index .nav-container .nav-lista ul {
         list-style: none; }
       .header-index .nav-container .nav-lista .lista {
@@ -763,10 +1020,55 @@ hr {
   display: flex;
   justify-content: center; }
 
-@media screen and (max-width: 610px) {
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .header-index {
+    background-image: url(../multimedia/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+    .header-index .nav-container2 {
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header-index .nav-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 20vh; }
+      .header-index .nav-container .nav-titulo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #CACFD2;
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px;
+        padding: 20px;
+        font-weight: bold; }
+      .header-index .nav-container .nav-lista {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+        .header-index .nav-container .nav-lista ul {
+          list-style: none; }
+        .header-index .nav-container .nav-lista .lista {
+          display: flex;
+          justify-items: end;
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 20px; }
+          .header-index .nav-container .nav-lista .lista .li {
+            padding: 10px; }
+            .header-index .nav-container .nav-lista .lista .li .a {
+              text-decoration: none;
+              color: #CACFD2; }
   .videos {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     padding: 10px;
     margin: 50px; } }
