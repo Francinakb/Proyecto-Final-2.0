@@ -82,6 +82,9 @@ body {
 .section-videos {
     h2 {
         @include titulos1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .videos {
@@ -96,6 +99,7 @@ body {
 .personajes {
     display: flex;
     flex-direction: column;
+    text-align: center;
     color: $amarillo;
     font-size: $font-size2;
     font-family: $font3;

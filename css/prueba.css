@@ -95,7 +95,10 @@
 .section-videos2 h2 {
   color: #cf5e13;
   font-family: "Bebas Neue", cursive;
-  font-size: 32px; }
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
 
 .section-videos2 .videos-comunidad {
   display: flex;
@@ -1028,7 +1031,10 @@ body {
 .section-videos h2 {
   color: #cf5e13;
   font-family: "Bebas Neue", cursive;
-  font-size: 32px; }
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
 
 .section-videos .videos {
   display: flex;
@@ -1040,6 +1046,7 @@ body {
 .personajes {
   display: flex;
   flex-direction: column;
+  text-align: center;
   color: #F4D03F;
   font-size: 20px;
   font-family: "Roboto Mono", monospace; }
