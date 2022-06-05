@@ -14,24 +14,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&family=Roboto+Mono:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&family=Roboto+Mono:wght@100&display=swap");
-.boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
+.boton, .header-perks .nav-container2 .boton-perks, .nav-container2 .boton-items, .header-personajes .nav-container2 .boton-personajes, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
   width: fit-content;
   color: black;
-  font-size: 32px;
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   border: #641E16;
   border-radius: 30px;
   padding: 10px; }
 
-.boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
+.boton, .header-perks .nav-container2 .boton-perks, .nav-container2 .boton-items, .header-personajes .nav-container2 .boton-personajes, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
   width: fit-content;
   color: black;
-  font-size: 32px;
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   border: #641E16;
@@ -94,6 +92,18 @@
       width: 100%;
       height: 80vh; }
 
+.section-videos2 h2 {
+  color: #cf5e13;
+  font-family: "Bebas Neue", cursive;
+  font-size: 32px; }
+
+.section-videos2 .videos-comunidad {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 30px; }
+
 .article-container {
   margin-top: 50px;
   display: flex;
@@ -117,12 +127,6 @@
     font-size: 20px;
     background-color: black;
     opacity: 0.7; }
-
-.videos-comunidad {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin: 50px; }
 
 hr {
   margin: 20px; }
@@ -245,7 +249,7 @@ hr {
         height: 80%; }
   .videos-comunidad {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 2%;
     margin: 0; } }
 
@@ -280,12 +284,11 @@ hr {
         width: 300px;
         height: 600px; } }
 
-.boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
+.boton, .header-perks .nav-container2 .boton-perks, .nav-container2 .boton-items, .header-personajes .nav-container2 .boton-personajes, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
   width: fit-content;
   color: black;
-  font-size: 32px;
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   border: #641E16;
@@ -338,7 +341,9 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .header-perks .nav-container2 .boton-items:hover {
+    .header-perks .nav-container2 .boton-perks {
+      font-size: 32px; }
+    .header-perks .nav-container2 .boton-perks:hover {
       height: 80px; }
 
 .article-container {
@@ -439,6 +444,25 @@ hr {
     width: 100%;
     display: flex;
     flex-flow: row wrap; }
+    .header-perks .nav-container2 {
+      height: 30vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header-perks .nav-container2 .boton-perks {
+        background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
+        height: 30%;
+        width: 50%;
+        color: black;
+        font-size: 20px;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 1000;
+        border: #641E16;
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        align-items: center; }
     .header-perks .nav-container {
       display: flex;
       flex-direction: row;
@@ -453,7 +477,7 @@ hr {
         color: #CACFD2;
         font-family: "Bebas Neue", cursive;
         font-size: 30px;
-        padding: 20px;
+        padding: 10px;
         font-weight: bold; }
       .header-perks .nav-container .nav-lista {
         display: flex;
@@ -472,12 +496,11 @@ hr {
             text-decoration: none;
             color: #CACFD2; } }
 
-.boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
+.boton, .header-perks .nav-container2 .boton-perks, .nav-container2 .boton-items, .header-personajes .nav-container2 .boton-personajes, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
   width: fit-content;
   color: black;
-  font-size: 32px;
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   border: #641E16;
@@ -499,6 +522,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .nav-container2 .boton-items {
+    font-size: 32px; }
   .nav-container2 .boton-items:hover {
     height: 80px; }
 
@@ -507,12 +532,12 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 200%;
+  width: 100%;
   height: 20vh; }
   .nav-container .nav-titulo {
     display: flex;
     justify-content: center;
-    width: 200%;
+    width: 100%;
     color: #CACFD2;
     font-family: "Bebas Neue", cursive;
     font-size: 50px;
@@ -521,7 +546,7 @@ hr {
   .nav-container .nav-lista {
     display: flex;
     justify-content: center;
-    width: 200%; }
+    width: 100%; }
   .nav-container ul {
     list-style: none; }
   .nav-container .lista {
@@ -598,70 +623,82 @@ hr {
     width: 100%;
     display: flex;
     flex-flow: row wrap; }
-  .nav-container2 {
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 20vh; }
-    .nav-container .nav-titulo {
-      display: flex;
-      justify-content: center;
+    .header-items .nav-container2 {
+      height: 30vh;
       width: 100%;
-      color: #CACFD2;
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px;
-      padding: 10px;
-      font-weight: bold; }
-    .nav-container .nav-lista {
       display: flex;
       justify-content: center;
-      width: 100%; }
-    .nav-container ul {
-      list-style: none; }
-    .nav-container .lista {
+      align-items: center; }
+      .header-items .nav-container2 .boton-items {
+        background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
+        height: 30%;
+        width: 50%;
+        color: black;
+        font-size: 20px;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 1000;
+        border: #641E16;
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        align-items: center; }
+    .header-items .nav-container {
       display: flex;
-      justify-items: end;
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 20px; }
-      .nav-container .lista .li {
-        padding: 10px; }
-        .nav-container .lista .li .a {
-          text-decoration: none;
-          color: #CACFD2; }
-  main {
-    padding: 10px; }
-    main .section-items {
-      display: grid;
-      grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
-      border: 2px dotted #cf5e13;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 20vh; }
+      .header-items .nav-container .nav-titulo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #CACFD2;
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px;
+        padding: 10px;
+        font-weight: bold; }
+      .header-items .nav-container .nav-lista {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+      .header-items .nav-container ul {
+        list-style: none; }
+      .header-items .nav-container .lista {
+        display: flex;
+        justify-items: end;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px; }
+        .header-items .nav-container .lista .li {
+          padding: 10px; }
+          .header-items .nav-container .lista .li .a {
+            text-decoration: none;
+            color: #CACFD2; }
+    .header-items main {
       padding: 10px; }
-    main .card1 {
-      grid-area: item1; }
-    main .card2 {
-      grid-area: item2; }
-    main .card3 {
-      grid-area: item3; }
-    main .card4 {
-      grid-area: item4; }
-    main .card5 {
-      grid-area: item5; }
-    main .card6 {
-      grid-area: item6; } }
+      .header-items main .section-items {
+        display: grid;
+        grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
+        border: 2px dotted #cf5e13;
+        padding: 10px; }
+      .header-items main .card1 {
+        grid-area: item1; }
+      .header-items main .card2 {
+        grid-area: item2; }
+      .header-items main .card3 {
+        grid-area: item3; }
+      .header-items main .card4 {
+        grid-area: item4; }
+      .header-items main .card5 {
+        grid-area: item5; }
+      .header-items main .card6 {
+        grid-area: item6; } }
 
-.boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
+.boton, .header-perks .nav-container2 .boton-perks, .nav-container2 .boton-items, .header-personajes .nav-container2 .boton-personajes, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
   width: fit-content;
   color: black;
-  font-size: 32px;
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   border: #641E16;
@@ -682,6 +719,10 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .header-personajes .nav-container2 .boton-personajes {
+      font-size: 32px; }
+    .header-personajes .nav-container2 .boton-personajes:hover {
+      height: 80px; }
   .header-personajes .nav-container {
     display: flex;
     flex-direction: row;
@@ -689,8 +730,6 @@ hr {
     flex-wrap: wrap;
     width: 100%;
     height: 20vh; }
-    .header-personajes .nav-container .boton-items:hover {
-      height: 80px; }
     .header-personajes .nav-container .nav-titulo {
       display: flex;
       justify-content: center;
@@ -813,6 +852,19 @@ hr {
       display: flex;
       justify-content: center;
       align-items: center; }
+      .header-personajes .nav-container2 .boton-personajes {
+        background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
+        height: 30%;
+        width: 50%;
+        color: black;
+        font-size: 20px;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 1000;
+        border: #641E16;
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        align-items: center; }
     .header-personajes .nav-container {
       display: flex;
       flex-direction: row;
@@ -844,59 +896,59 @@ hr {
           padding: 10px; }
           .header-personajes .nav-container .lista .li .a {
             text-decoration: none;
-            color: #CACFD2; }
-  main {
-    padding: 10px;
-    background-color: black; }
-    main .article-personajes {
-      padding: 20px; }
-      main .article-personajes h2 {
-        color: #cf5e13;
-        font-family: "Bebas Neue", cursive;
-        font-size: 32px;
-        color: #d32a1e; }
-      main .article-personajes .p-personajes {
-        color: orange;
-        font-size: Arial, Helvetica, sans-serif;
-        font-family: "Roboto Mono", monospace;
-        font-weight: bold;
-        padding: 10px;
-        margin: 10px; }
-    main .asesinos-container {
-      padding: 20px;
-      border: 2px dotted #cf5e13;
-      display: grid;
-      grid-template-areas: "asesino1" "asesino2" "asesino3" "asesino4" "asesino5" "asesino6"; }
-    main .supervivientes-container {
-      padding: 20px;
-      border: 2px dotted #cf5e13;
-      display: grid;
-      grid-template-areas: "superviviente1" "superviviente2" "superviviente3" "superviviente4" "superviviente5" "superviviente6"; }
-    main h4 {
+            color: #CACFD2; } }
+
+main {
+  padding: 10px;
+  background-color: black; }
+  main .article-personajes {
+    padding: 20px; }
+    main .article-personajes h2 {
+      color: #cf5e13;
       font-family: "Bebas Neue", cursive;
-      color: #d32a1e;
-      font-size: 20px; }
-    main .p-supervivientes {
-      color: #F4D03F;
-      font-size: 13px;
+      font-size: 32px;
+      color: #d32a1e; }
+    main .article-personajes .p-personajes {
+      color: orange;
+      font-size: Arial, Helvetica, sans-serif;
       font-family: "Roboto Mono", monospace;
       font-weight: bold;
       padding: 10px;
       margin: 10px; }
-    main .p-asesinos {
-      color: #F4D03F;
-      font-size: 13px;
-      font-family: "Roboto Mono", monospace;
-      font-weight: bold;
-      padding: 10px;
-      margin: 10px; } }
+  main .asesinos-container {
+    padding: 20px;
+    border: 2px dotted #cf5e13;
+    display: grid;
+    grid-template-areas: "asesino1" "asesino2" "asesino3" "asesino4" "asesino5" "asesino6"; }
+  main .supervivientes-container {
+    padding: 20px;
+    border: 2px dotted #cf5e13;
+    display: grid;
+    grid-template-areas: "superviviente1" "superviviente2" "superviviente3" "superviviente4" "superviviente5" "superviviente6"; }
+  main h4 {
+    font-family: "Bebas Neue", cursive;
+    color: #d32a1e;
+    font-size: 20px; }
+  main .p-supervivientes {
+    color: #F4D03F;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px; }
+  main .p-asesinos {
+    color: #F4D03F;
+    font-size: 13px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px; }
 
-.boton, .header-perks .nav-container2 .boton-items, .nav-container2 .boton-items, .header-personajes .nav-container .boton-items, .header-index .nav-container2 .boton1, .personajes .boton2 {
+.boton, .header-perks .nav-container2 .boton-perks, .nav-container2 .boton-items, .header-personajes .nav-container2 .boton-personajes, .header-index .nav-container2 .boton1, .personajes .boton2 {
   background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
   height: 70px;
   width: fit-content;
   color: black;
-  font-size: 32px;
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   border: #641E16;
@@ -924,6 +976,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .header-index .nav-container2 .boton1 {
+      font-size: 32px; }
     .header-index .nav-container2 .boton1:hover {
       height: 80px; }
   .header-index .nav-container {
@@ -939,7 +993,7 @@ body {
       width: 100%;
       color: #CACFD2;
       font-family: "Bebas Neue", cursive;
-      font-size: 30px;
+      font-size: 50px;
       padding: 20px;
       font-weight: bold; }
     .header-index .nav-container .nav-lista {
@@ -969,7 +1023,7 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  margin: 50px; }
+  margin: 30px; }
 
 .personajes {
   display: flex;
@@ -977,6 +1031,8 @@ body {
   color: #F4D03F;
   font-size: 20px;
   font-family: "Roboto Mono", monospace; }
+  .personajes .boton2 {
+    font-size: 32px; }
   .personajes .a-boton2 {
     margin: auto;
     margin-top: 20px; }
@@ -1035,6 +1091,19 @@ hr {
       display: flex;
       justify-content: center;
       align-items: center; }
+      .header-index .nav-container2 .boton1 {
+        background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
+        height: 20%;
+        width: 45%;
+        color: black;
+        font-size: 20px;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 1000;
+        border: #641E16;
+        border-radius: 30px;
+        padding: 10px;
+        display: flex;
+        align-items: center; }
     .header-index .nav-container {
       display: flex;
       flex-direction: row;
@@ -1070,5 +1139,28 @@ hr {
   .videos {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    margin: 50px; } }
+    padding: 2%;
+    margin: 0; }
+  .personajes {
+    display: flex;
+    flex-direction: column;
+    color: #F4D03F;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace; }
+    .personajes .boton2 {
+      background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
+      height: 70px;
+      width: fit-content;
+      color: black;
+      font-size: 20px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 1000;
+      list-style: none;
+      border: #641E16;
+      border-radius: 30px;
+      padding: 10px; }
+    .personajes .a-boton2 {
+      margin: auto;
+      margin-top: 20px; }
+    .personajes .boton2:hover {
+      height: 80px; } }

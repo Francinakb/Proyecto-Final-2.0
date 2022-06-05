@@ -4,18 +4,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&family=Roboto+Mono:wght@100&display=swap');
 
 
-.header-personajes{
+.header-personajes {
     @include header;
 
-    .nav-container2{
+    .nav-container2 {
         height: 50vh;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .boton-personajes {
+            @extend .boton;
+            font-size: $font-size1;
         }
 
-    .nav-container{
+        .boton-personajes:hover {
+            height: 80px;
+        }
+    }
+
+    .nav-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -23,15 +32,7 @@
         width: 100%;
         height: 20vh;
 
-        .boton-items{
-            @extend .boton;
-        }
-
-        .boton-items:hover{
-            height: 80px;
-        }
-
-        .nav-titulo{
+        .nav-titulo {
             display: flex;
             justify-content: center;
             width: 100%;
@@ -42,89 +43,89 @@
             font-weight: bold;
         }
 
-        .nav-lista{
+        .nav-lista {
             display: flex;
             justify-content: center;
             width: 100%;
-    }
+        }
 
-        ul{
+        ul {
             list-style: none;
         }
 
-        .lista{
+        .lista {
             display: flex;
             justify-items: end;
             font-family: $font1;
             padding: 20px;
 
-            .li{
+            .li {
                 padding: 10px;
 
-            .a{
-                text-decoration: none;
-                color: $gris;
+                .a {
+                    text-decoration: none;
+                    color: $gris;
                 }
             }
         }
     }
 }
 
-main{
+main {
     padding: 10px;
     background-color: black;
 
-    .article-personajes{
+    .article-personajes {
         padding: 20px;
 
-        h2{
+        h2 {
             @include titulos1;
             color: $rojo;
         }
 
-        .p-personajes{
+        .p-personajes {
             @include textos2;
         }
     }
 
-    .asesinos-container{
+    .asesinos-container {
         padding: 20px;
         border: 2px dotted $naranja;
         display: grid;
-        grid-template-areas: 
-        "asesino1 asesino2"
-        "asesino3 asesino4"
-        "asesino5 asesino6";
+        grid-template-areas:
+            "asesino1 asesino2"
+            "asesino3 asesino4"
+            "asesino5 asesino6";
     }
 
-    .supervivientes-container{
+    .supervivientes-container {
         padding: 20px;
         border: 2px dotted $naranja;
         display: grid;
-        grid-template-areas: 
-        "superviviente1 superviviente2"
-        "superviviente3 superviviente4"
-        "superviviente5 superviviente6";
+        grid-template-areas:
+            "superviviente1 superviviente2"
+            "superviviente3 superviviente4"
+            "superviviente5 superviviente6";
     }
 
-    h4{
+    h4 {
         @include titulos2;
     }
 
-    .p-supervivientes{
+    .p-supervivientes {
         @include textos1;
     }
 
-    .p-asesinos{
+    .p-asesinos {
         @include textos1;
     }
 }
 
-hr{
+hr {
     margin: 20px;
 }
 
-.footer-container{
+.footer-container {
     background-color: black;
     width: 100%;
     height: 200px;
@@ -134,51 +135,68 @@ hr{
     color: $gris;
     font-family: $font1;
 
-    .info-footer{
+    .info-footer {
         display: flex;
         align-items: center;
         flex-direction: column;
 
-        .logos-flex{
+        .logos-flex {
             width: 100px;
             display: flex;
             justify-content: space-between;
         }
 
-        h2{
+        h2 {
             margin: 20px;
         }
 
-        .logo1{
+        .logo1 {
             width: 40px;
             height: 40px;
         }
-        .logo2{
+
+        .logo2 {
             width: 40px;
             height: 40px;
         }
     }
 }
-.footer-derechos{
+
+.footer-derechos {
     color: $gris;
     font-family: $font1;
     display: flex;
     justify-content: center;
 }
 
-@media screen and (min-width: 0px) and (max-width: 700px){
-    .header-personajes{
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .header-personajes {
         @include header;
     
-        .nav-container2{
+        .nav-container2 {
             height: 50vh;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            }
     
-        .nav-container{
+            .boton-personajes {
+                background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
+                height: 30%;
+                width: 50%;
+                color: $negro;
+                font-size: 20px;
+                font-family: $font3;
+                font-weight: 1000;
+                border: #641E16;
+                border-radius: 30px;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    
+        .nav-container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -186,7 +204,7 @@ hr{
             width: 100%;
             height: 20vh;
     
-            .nav-titulo{
+            .nav-titulo {
                 display: flex;
                 justify-content: center;
                 width: 100%;
@@ -197,87 +215,87 @@ hr{
                 font-weight: bold;
             }
     
-            .nav-lista{
+            .nav-lista {
                 display: flex;
                 justify-content: center;
                 width: 100%;
-        }
+            }
     
-            ul{
+            ul {
                 list-style: none;
             }
     
-            .lista{
+            .lista {
                 display: flex;
                 justify-items: end;
                 font-family: $font1;
                 padding: 20px;
     
-                .li{
+                .li {
                     padding: 10px;
     
-                .a{
-                    text-decoration: none;
-                    color: $gris;
+                    .a {
+                        text-decoration: none;
+                        color: $gris;
                     }
                 }
             }
         }
     }
+}
 
-    main{
+    main {
         padding: 10px;
         background-color: black;
-    
-        .article-personajes{
+
+        .article-personajes {
             padding: 20px;
-    
-            h2{
+
+            h2 {
                 @include titulos1;
                 color: $rojo;
             }
-    
-            .p-personajes{
+
+            .p-personajes {
                 @include textos2;
             }
         }
-    
-        .asesinos-container{
+
+        .asesinos-container {
             padding: 20px;
             border: 2px dotted $naranja;
             display: grid;
-            grid-template-areas: 
-            "asesino1"
-            "asesino2"
-            "asesino3"
-            "asesino4"
-            "asesino5"
-            "asesino6";
+            grid-template-areas:
+                "asesino1"
+                "asesino2"
+                "asesino3"
+                "asesino4"
+                "asesino5"
+                "asesino6";
         }
-    
-        .supervivientes-container{
+
+        .supervivientes-container {
             padding: 20px;
             border: 2px dotted $naranja;
             display: grid;
-            grid-template-areas: 
-            "superviviente1"
-            "superviviente2"
-            "superviviente3"
-            "superviviente4"
-            "superviviente5"
-            "superviviente6";
+            grid-template-areas:
+                "superviviente1"
+                "superviviente2"
+                "superviviente3"
+                "superviviente4"
+                "superviviente5"
+                "superviviente6";
         }
-        
-        h4{
+
+        h4 {
             @include titulos2;
         }
-    
-        .p-supervivientes{
+
+        .p-supervivientes {
             @include textos1;
         }
-    
-        .p-asesinos{
+
+        .p-asesinos {
             @include textos1;
         }
     }
-}

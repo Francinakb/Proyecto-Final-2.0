@@ -75,6 +75,19 @@
     }
 }
 
+.section-videos2 {
+    h2{
+        @include titulos1;
+    }
+
+    .videos-comunidad {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 30px;
+    }
+}
 
 .article-container {
     margin-top: 50px;
@@ -98,13 +111,6 @@
         background-color: $negro;
         opacity: 0.7;
     }
-}
-
-.videos-comunidad {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin: 50px;
 }
 
 hr {
@@ -275,7 +281,7 @@ hr {
 
     .videos-comunidad {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         padding: 2%;
         margin: 0;
     }

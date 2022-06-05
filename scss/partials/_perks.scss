@@ -60,11 +60,12 @@
         align-items: center;
 
 
-        .boton-items {
+        .boton-perks {
             @extend .boton;
+            font-size: $font-size1;
         }
 
-        .boton-items:hover {
+        .boton-perks:hover {
             height: 80px;
         }
     }
@@ -198,6 +199,29 @@ hr {
     .header-perks {
         @include header;
 
+        .nav-container2 {
+            height: 30vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .boton-perks {
+                background-image: linear-gradient(to right, #44130d, #922B21, #D35400, #F4D03F);
+                height: 30%;
+                width: 50%;
+                color: $negro;
+                font-size: 20px;
+                font-family: $font3;
+                font-weight: 1000;
+                border: #641E16;
+                border-radius: 30px;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
         .nav-container {
             display: flex;
             flex-direction: row;
@@ -213,7 +237,7 @@ hr {
                 color: $gris;
                 font-family: $font2;
                 font-size: 30px;
-                padding: 20px;
+                padding: 10px;
                 font-weight: bold;
             }
 
