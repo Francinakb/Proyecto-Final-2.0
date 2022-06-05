@@ -77,6 +77,9 @@ main {
 
     .article-personajes {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
         h2 {
             @include titulos1;
@@ -96,6 +99,9 @@ main {
             "asesino1 asesino2"
             "asesino3 asesino4"
             "asesino5 asesino6";
+            display: flex;
+            flex-direction: column;
+            text-align: center;
     }
 
     .supervivientes-container {
@@ -106,6 +112,9 @@ main {
             "superviviente1 superviviente2"
             "superviviente3 superviviente4"
             "superviviente5 superviviente6";
+            display: flex;
+            flex-direction: column;
+            text-align: center;
     }
 
     h4 {

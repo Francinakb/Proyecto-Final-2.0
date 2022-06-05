@@ -83,6 +83,9 @@ main {
             "item5 item6";
         border: 2px dotted $naranja;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .card1 {

@@ -566,7 +566,10 @@ main {
     display: grid;
     grid-template-areas: "item1 item2" "item3 item4" "item5 item6";
     border: 2px dotted #cf5e13;
-    padding: 10px; }
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
   main .card1 {
     grid-area: item1; }
   main .card2 {
@@ -760,7 +763,10 @@ main {
   padding: 10px;
   background-color: black; }
   main .article-personajes {
-    padding: 20px; }
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
     main .article-personajes h2 {
       color: #cf5e13;
       font-family: "Bebas Neue", cursive;
@@ -777,12 +783,18 @@ main {
     padding: 20px;
     border: 2px dotted #cf5e13;
     display: grid;
-    grid-template-areas: "asesino1 asesino2" "asesino3 asesino4" "asesino5 asesino6"; }
+    grid-template-areas: "asesino1 asesino2" "asesino3 asesino4" "asesino5 asesino6";
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
   main .supervivientes-container {
     padding: 20px;
     border: 2px dotted #cf5e13;
     display: grid;
-    grid-template-areas: "superviviente1 superviviente2" "superviviente3 superviviente4" "superviviente5 superviviente6"; }
+    grid-template-areas: "superviviente1 superviviente2" "superviviente3 superviviente4" "superviviente5 superviviente6";
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
   main h4 {
     font-family: "Bebas Neue", cursive;
     color: #d32a1e;
